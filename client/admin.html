@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin - VoteHub</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - VoteHub</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-btn-container">
+  <a href="pages/signin.html" class="login-btn">🔑 Go to Login</a>
+</div>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="media/WhatsApp Video 2025-09-01 at 22.22.17_e705c6d3.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Admin Content -->
+  <div class="content">
+    <header class="admin-header">
+      <h1>🎉 VoteHub Admin Panel</h1>
+      <p>Manage candidates, view votes, and control settings</p>
+    </header>
+
+    <main class="admin-dashboard">
+      <div class="admin-card">
+        <h2>👤 Manage Candidates</h2>
+        <button>Add Candidate</button>
+        <button>Remove Candidate</button>
+      </div>
+
+      <div class="admin-card">
+        <h2>📊 Votes</h2>
+        <button>View Results</button>
+        <button onclick="resetVotes()">Reset Votes</button>
+      </div>
+
+      <div class="admin-card">
+        <h2>⚙ Settings</h2>
+        <button>Change Deadline</button>
+        <button>Update Profile</button>
+      </div>
+    </main>
+
+    <footer class="admin-footer">
+      <p>&copy; 2025 VoteHub | Admin Access Only</p>
+    </footer>
+  </div>
+
+  <script>
+    function resetVotes() {
+      alert("All votes have been reset (demo function).");
+    }
+  </script>
+</body>
+</html>
